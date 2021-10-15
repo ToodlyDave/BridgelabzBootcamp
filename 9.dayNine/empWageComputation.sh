@@ -9,5 +9,6 @@ else
 	isPresent="Present";
 fi
 
+wage=20;
 
-
+echo " Monthly wages = " $((20 * 8 * wage));
