@@ -1,6 +1,8 @@
 #!/bin/bash
 
-
+function wageCalculator() {
+	echo $((RANDOM % 2));
+}
 
 echo " Welcome to the Employee Wage Computation Program ";
 
@@ -19,7 +21,7 @@ echo " Monthly wages = " $((20 * 8 * wage));
 
 while [[ $hours -lt 100 && $days -lt 20 ]]
 do
-	timing=$((RANDOM % 2));
+	timing=$(wageCalculator);
 	case $timing in
 		0) ((earnings += (wage * 8) ));
 		   ((days++));
