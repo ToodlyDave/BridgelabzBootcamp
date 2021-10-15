@@ -37,3 +37,8 @@ done
 
 echo " hours = $hours days = $days ";
 echo " earnings = $earnings";
+
+dailyWage=$((20*8));
+TotalWage=$((20 * 8 * wage));
+
+echo " The daily wage = $dailyWage, Total wage = $TotalWage";
