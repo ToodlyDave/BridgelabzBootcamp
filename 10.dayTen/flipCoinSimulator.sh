@@ -15,3 +15,10 @@ do
 done
 
 echo " heads = $heads and tails = $tails";
+
+if [ $heads -gt $tails ];
+then
+	echo " Heads won by " $((heads - tails));
+else
+	echo " Tails won by " $((tails - heads));
+fi
