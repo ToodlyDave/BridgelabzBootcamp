@@ -29,24 +29,18 @@ done
 
 for ((i=1; $i < ${#arr[@]}; i++))
 do
-#	echo " count = $count checking ${arr[$i]} ";
 	if [ ${arr[$i]} -eq ${arr[$((i - 1))]} ]
 	then
-#		echo " equal to the prev one ";
 		((count++));
 	else
 		if [ -z ${dict[$count]} ]
 		then
-#			echo " created a new dict value ";
 			dict[$count]=1;
 		else
-#			echo " incrementing dict count ";
 			((dict[$count]++));
 		fi
 		count=1;
 
-#		echo " dict keys = ${!dict[@]} ";
-#		echo " dict vals = ${dict[@]}";
 	fi
 done
 
